@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* universal selector */
+        *{
+             box-sizing: border-box;
+        }
+        .container{
+            background-color: rgb(236, 184, 115);
+            border: 3px solid red;
+            /* value order : top&bottom left&right */
+            padding: 20px 20px;
+            /*value order :  top right bottom left */
+            margin: 10px 0px 10px 0px;
+            border-radius: 10px;
+            width: 200px;
+            /* prevent change in width when changing padding */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum iusto alias hic sit quo ipsam cumque fugit officiis magni ut.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum iusto alias hic sit quo ipsam cumque fugit officiis magni ut.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum iusto alias hic sit quo ipsam cumque fugit officiis magni ut.</p>
+    </div>
+        
+    
+    
+</body>
+</html>
